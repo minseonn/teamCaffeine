@@ -1,0 +1,1045 @@
+@charset "utf-8";
+
+
+/* [S] quick.div 안 쓰기로 했습니다 */
+/*
+#quick{
+    position: fixed;
+    width: 100px;
+    height: 600px;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+}
+
+#quick_title{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(255, 217, 102);
+    border-radius: 50px 50px 0 0;
+}
+
+#quick_title p{
+    position: relative;
+    top: 30px;
+    font: bold 1em/1.2em "NGothicEB";
+    color: rgb(9, 46, 46);
+}
+
+#quick_title img{
+    position: relative;
+    top: 20px;
+}
+
+#quick_menu{
+    position: relative;
+    width: 100px;
+    height: 0px;
+    top: 0px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 217, 102);
+    opacity: 1;
+    transition: opacity, height 0.3s ease-in;
+}
+
+#quick_menu p{
+    color: #999;
+}
+
+.quick_text{
+    position: relative;
+    width: 90px;
+    height: 0px;
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity, height 1s ease;
+}
+
+
+.quick_last img{
+    position: relative;
+    top: 25px;
+}
+
+
+#quick_bottom{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(255, 217, 102);
+    border-radius: 0 0 50px 50px;
+    z-index: 900;
+    top: -15px;
+}
+*/
+/*hover*/
+/*
+#quick_title:hover ul{
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#quick_title:hover ul .quick_text{
+    height: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#quick_title:hover #quick_bottom{
+    top: -1px;
+}
+
+#quick_title>a:hover p{
+    color: white;
+    text-shadow: none;
+}
+
+#quick_menu a:hover p{
+    color: rgb(9, 46, 46);
+}
+*/
+/* [E] quick.div */
+
+/* [S] quick2.div */
+
+#quick2{
+    position: fixed;
+    width: 100px;
+    height: 550px;
+    margin-top: 200px; /*원래는 200px*/
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+    background-color: rgb(255, 217, 102);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#quick2_menu{
+    position: relative;
+    width: 80px;
+    height: 520px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#quick2_menu li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-bottom: 7px dotted rgb(255, 217, 102);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#quick2_menu li:last-child{
+    border: none;
+}
+
+#quick2_menu li p{
+    font: bold 0.9em "NGothic", Gulim;
+    color: #777;
+}
+
+#quick2_menu .quick2_first{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick2_menu .quick2_first p{
+    color: #fff;
+    font: bold 1.1em "NGothicEB", Gulim;
+}
+
+/*hover*/
+
+#quick2_menu li:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#quick2_menu li:hover:first-child{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick2_menu li:hover:last-child{
+    border-radius: 15px;
+}
+
+#quick2_menu li:hover p{
+    color: rgb(9, 46, 46);
+    font: bold "NGothicEB", Gulim;
+}
+
+/* [E] quick2.div */
+/* [S] div.head*/
+#head{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(9, 46, 46);
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+#head:hover{
+    background-color: #fff;
+}
+
+#head:hover header>nav>#navi>li>a{
+    color: #555;
+    font: bold 1em "NGothicEB", Gulim;
+}
+
+header{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header a{
+    color: #ddd;
+}
+
+header h1{
+    position: relative;
+}
+
+header h1 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    margin: 30px 0 30px -50px;
+}
+
+header h1 img.loca_1{
+    position: absolute;
+}
+
+header h1 img.loca_2{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#head:hover header h1 img.loca_2{
+    opacity: 1;
+}
+
+header h1 img:hover{
+    
+    width: 110px;
+    height: 110px;
+    margin: 25px 0 25px -55px;
+}
+
+header #login{
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+header #login li{
+    float: left;
+    padding: 0 15px;
+    }
+
+header #login li:first-child{
+    border-right: 1px solid #ddd;
+}
+
+header #login li a{
+    color: #aaa;
+}
+
+header #login li a:hover{
+    color: #555;
+}
+
+nav #navi{
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    top: -50px;
+    text-align: center;
+    font: bold 1em/60px "NGothic", Gulim;
+}
+
+nav #navi::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav #navi li{
+    float: left;
+    width: 200px;
+}
+
+nav #navi>li.navi_r{
+    position: relative;
+    left: 200px;
+}
+
+nav #navi>li>a{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 35px;
+    top: 0;
+}
+
+nav #navi>li:hover>a{
+    width: 100%;
+    border-bottom: 3px solid rgb(9, 46, 46);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Sub Menu*/
+nav #navi>li>ul{
+    position: absolute;
+    width: 1000px;
+    background-color: #fff;  
+    z-index: 100;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #navi>li:nth-child(3)>ul{
+    left: -600px;
+}
+
+nav #navi>li:nth-child(4)>ul{
+    width: 800px;
+    left: -600px;
+}
+
+nav #navi>li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+
+nav #navi>li>ul>li{
+    height: 0px;
+    line-height: 0px;
+}
+
+nav #navi>li:hover>ul>li{
+    height: 25px;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+
+nav #navi>li>ul>li>a{
+    display: block;
+    height: 25px;
+    z-index: 100;
+    text-align: center;
+    background-color: #fff;  
+    color: #777;
+    font: bold 0.9em/25px "NGothic", Gulim;
+}
+
+nav #navi>li>ul>li>a:hover{
+    color: rgb(9, 46, 46);
+    font: bold 1em/25px "NGothicEB", Gulim;
+}
+
+
+
+/* [E] div.head*/
+
+div#nav_menu{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+div#nav_menu #nav_menu_quick{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+div#nav_menu #nav_menu_quick p{
+    position: relative;
+}
+
+
+/*카페인메뉴시작*/
+#caffeine_menu{
+    position: relative;
+    width: 100%;
+}
+
+#caffeine_menu #menu{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+section#menu h2{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 350px;
+    font: 2em "NGothicEB", Gulim;
+    text-align: center;
+    background-color: #fff;
+}
+
+section#menu p.click_quick{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    right: 80px;
+    top: 0;
+    text-align: center;
+}
+
+section#menu form{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 1000px;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+section#menu form h3{
+    position: relative;
+    width: 150px;
+    left: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 20pt;
+}
+section#menu form div#input_box{
+    position: relative;
+    border-top: 1px solid #999;
+    left: 20px;
+    padding-top: 30px;
+    width: 950px;
+}
+section#menu form span{
+    margin-right: 25px;
+}
+
+/*div starbucks*/
+div#starbucks{
+    position: relative;
+    width: 1000px;
+    height: 730px;
+    top: -50px;
+    margin: 0 auto;
+}
+
+div#starbucks>h3{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+div#starbucks>h3 img{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+}
+
+div#starbucks ul{
+    width: 1000px;
+    height: 740px;
+    padding-top: 30px;
+}
+
+div#starbucks ul li{
+    position: relative;
+    display: inline-block;
+    width: 24.4%;
+    text-align: center;
+}
+
+div#starbucks ul li:nth-child(4){
+    margin-right: 0;
+}
+
+div#starbucks ul li p img{
+    width: 220px;
+    height: 230px;
+}
+
+div#starbucks ul li p span{
+    width: 220px;
+    height: 37px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 15pt;
+    display: block;
+    margin: 0 auto;
+}
+/*--starbucks hover--*/
+div#starbucks ul li:hover .text_over{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div#starbucks ul li .text_over{
+    position: absolute;
+    border: 3px solid rgb(9, 46, 46);
+    width: 220px;
+    height: 230px;
+    top: 0px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#starbucks ul li .text_over .text_over_t{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font: bold 1.1em/50px "NGothicEB", Gulim ;
+    border-bottom: 2px solid #333;
+}
+
+div#starbucks ul li .text_over .text_over_p{
+    padding: 20px;
+    text-align: left;
+}
+
+div#starbucks ul li .text_over table{
+    padding: 20px;
+}
+
+div#starbucks ul li .text_over table tr td{
+    text-align: left;
+}
+
+/*div ediya*/
+div#ediya{
+    position: relative;
+    width: 1000px;
+    height: 730px;
+    top: -90px;
+    margin: 0 auto;
+}
+
+div#ediya>h3{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+div#ediya>h3 img{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+}
+
+div#ediya ul{
+    width: 1000px;
+    height: 740px;
+    padding-top: 30px;
+}
+
+div#ediya ul li{
+    position: relative;
+    display: inline-block;
+    width: 24.4%;
+    text-align: center;
+}
+
+div#ediya ul li:nth-child(4){
+    margin-right: 0;
+}
+
+div#ediya ul li p img{
+    width: 220px;
+    height: 230px;
+}
+
+div#ediya ul li p span{
+    width: 220px;
+    height: 37px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 15pt;
+    display: block;
+    margin: 0 auto;
+}
+/*--ediya hover--*/
+div#ediya ul li:hover .text_over{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div#ediya ul li .text_over{
+    position: absolute;
+    border: 3px solid rgb(9, 46, 46);
+    width: 220px;
+    height: 230px;
+    top: 0px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#ediya ul li .text_over .text_over_t{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font: bold 1.1em/50px "NGothicEB", Gulim ;
+    border-bottom: 2px solid #333;
+}
+
+div#ediya ul li .text_over .text_over_p{
+    padding: 20px;
+    text-align: left;
+}
+
+div#ediya ul li .text_over table{
+    padding: 20px;
+}
+
+div#ediya ul li .text_over table tr td{
+    text-align: left;
+}
+
+/*div megacoff*/
+div#megacoff{
+    position: relative;
+    width: 1000px;
+    height: 730px;
+    top: -100px;
+    margin: 0 auto;
+}
+
+div#megacoff>h3{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+div#megacoff>h3 img{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+}
+
+div#megacoff ul{
+    width: 1000px;
+    height: 740px;
+    padding-top: 30px;
+}
+
+
+div#megacoff ul li{
+    position: relative;
+    display: inline-block;
+    width: 24.4%;
+    text-align: center;
+}
+
+div#megacoff ul li:nth-child(4){
+    margin-right: 0;
+}
+
+div#megacoff ul li p img{
+    width: 220px;
+    height: 230px;
+}
+
+div#megacoff ul li p span{
+    width: 220px;
+    height: 37px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 15pt;
+    display: block;
+    margin: 0 auto;
+}
+/*--megacoff hover--*/
+div#megacoff ul li:hover .text_over{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div#megacoff ul li .text_over{
+    position: absolute;
+    border: 3px solid rgb(9, 46, 46);
+    width: 220px;
+    height: 230px;
+    top: 0px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#megacoff ul li .text_over .text_over_t{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font: bold 1.1em/50px "NGothicEB", Gulim ;
+    border-bottom: 2px solid #333;
+}
+
+div#megacoff ul li .text_over .text_over_p{
+    padding: 20px;
+    text-align: left;
+}
+
+div#megacoff ul li .text_over table{
+    padding: 20px;
+}
+
+div#megacoff ul li .text_over table tr td{
+    text-align: left;
+}
+
+
+/*div paiks*/
+div#paiks{
+    position: relative;
+    width: 1000px;
+    height: 730px;
+    top: -100px;
+    margin: 0 auto;
+}
+
+div#paiks>h3{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+div#paiks>h3 img{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+}
+
+div#paiks ul{
+    width: 1000px;
+    height: 740px;
+    padding-top: 30px;
+}
+
+
+div#paiks ul li{
+    position: relative;
+    display: inline-block;
+    width: 24.4%;
+    text-align: center;
+}
+
+div#paiks ul li:nth-child(4){
+    margin-right: 0;
+}
+
+div#paiks ul li p img{
+    width: 220px;
+    height: 230px;
+}
+
+div#paiks ul li p span{
+    width: 220px;
+    height: 37px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 15pt;
+    display: block;
+    margin: 0 auto;
+}
+/*--paiks hover--*/
+div#paiks ul li:hover .text_over{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div#paiks ul li .text_over{
+    position: absolute;
+    border: 3px solid rgb(9, 46, 46);
+    width: 220px;
+    height: 230px;
+    top: 0px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#paiks ul li .text_over .text_over_t{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font: bold 1.1em/50px "NGothicEB", Gulim ;
+    border-bottom: 2px solid #333;
+}
+
+div#paiks ul li .text_over .text_over_p{
+    padding: 20px;
+    text-align: left;
+}
+
+div#paiks ul li .text_over table{
+    padding: 20px;
+}
+
+div#paiks ul li .text_over table tr td{
+    text-align: left;
+}
+
+/*div tomtoms*/
+div#tomtoms{
+    position: relative;
+    width: 1000px;
+    height: 730px;
+    top: -100px;
+    margin: 0 auto;
+}
+
+div#tomtoms>h3{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+div#tomtoms>h3 img{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+}
+
+div#tomtoms ul{
+    width: 1000px;
+    height: 740px;
+    padding-top: 30px;
+}
+
+div#tomtoms ul li{
+    position: relative;
+    display: inline-block;
+    width: 24.4%;
+    text-align: center;
+}
+
+div#tomtoms ul li:nth-child(4){
+    margin-right: 0;
+}
+
+div#tomtoms ul li p img{
+    width: 220px;
+    height: 230px;
+}
+
+div#tomtoms ul li p span{
+    width: 220px;
+    height: 37px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 15pt;
+    display: block;
+    margin: 0 auto;
+}
+/*--tomtoms hover--*/
+div#tomtoms ul li:hover .text_over{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div#tomtoms ul li .text_over{
+    position: absolute;
+    border: 3px solid rgb(9, 46, 46);
+    width: 220px;
+    height: 230px;
+    top: 0px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#tomtoms ul li .text_over .text_over_t{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font: bold 1.1em/50px "NGothicEB", Gulim ;
+    border-bottom: 2px solid #333;
+}
+
+div#tomtoms ul li .text_over .text_over_p{
+    padding: 20px;
+    text-align: left;
+}
+
+div#tomtoms ul li .text_over table{
+    padding: 20px;
+}
+
+div#tomtoms ul li .text_over table tr td{
+    text-align: left;
+}
+
+/*카페인메뉴끝*/
+
+/* [S] div.foot*/
+
+#foot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 57, 52);
+}
+
+#foot footer{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#foot footer ul{
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#foot footer ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#foot footer ul li{
+    float: left;
+    color: #ddd;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    font: normal 14px "NGothic", Gulim;
+}
+
+#foot footer ul a:last-child li{
+    border-right: 0;
+}
+
+#foot footer ul li:hover{
+    color: #999;
+}
+
+#foot footer address{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px ;
+}
+
+#foot footer address p{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#foot footer address span{
+    display: block;
+    color: #ddd;
+    font: normal 14px "NGothic", Gulim;
+    text-align: center;
+}
+
+
+
+/* [E] div.foot*/

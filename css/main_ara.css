@@ -1,0 +1,740 @@
+@charset "utf-8";
+h2{
+    font: bold 2em/100px "NGothicEB",Gulim;
+    z-index: 50;
+}
+
+h2 p{
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+.span_f{
+    font: bold 1.5em 'NGothicEB',Gulim;   
+}
+/*quick 영역 시작*/
+#quick{
+    position:fixed;
+    width: 100px;
+    height: 540px;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+    background-color: rgb(255, 217, 102);
+    /*box-sizing: border-box;*/
+    border-radius: 20px;
+}
+
+#quick ul{
+    position: relative;
+    width: 80px;
+    height: 518px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#quick ul li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-bottom: 7px dotted rgb(255, 217, 102);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#quick ul li:last-child{
+    border-bottom: none;
+}
+
+#quick ul li p{
+    font: bold 0.9em "NGothic",Gulim;
+    color: #777;
+}
+
+#quick ul li.q_tit{
+    background-color: rgb(255, 217, 102);    
+}
+
+#quick ul li.q_tit a p{
+    color: #fff;
+    font: bold 1.1em "NGothicEB";
+}
+
+#quick ul li:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#quick ul li:hover:first-child{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick ul li:hover:last-child{
+    border-radius: 15px;
+}
+
+#quick ul li:hover p{
+    color: rgb(9, 46, 46);
+    font: bold "NGothicEB";
+}
+/*-------------------------------------------------------------------------*/
+/*header 영역 시작*/
+#hd{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(9, 46, 46);
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+#hd:hover{
+    background-color: #fff;
+}
+
+#hd:hover header>nav>#navi>li>a{
+    color: #555;
+    font: bold 1em "NGothicEB";
+}
+
+header{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header a{
+    color: #ddd;
+}
+
+header h1{
+    position: relative;
+}
+
+header h1 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    margin: 30px 0 30px -50px;
+}
+
+header h1 img.loca_1{
+    position: absolute;
+}
+
+header h1 img.loca_2{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#head:hover header h1 img.loca_2{
+    opacity: 1;
+}
+
+header h1 img:hover{
+    
+    width: 110px;
+    height: 110px;
+    margin: 25px 0 25px -55px;
+}
+/*-------------------------------------*/
+/* login 영역 */
+header #login{
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+header #login li{
+    float: left;
+    padding: 0 15px;
+    }
+
+header #login li:first-child{
+    border-right: 1px solid #ddd;
+}
+
+header #login li a{
+    color: #aaa;
+}
+
+header #login li a:hover{
+    color: #555;
+}
+/*--------------------------------------*/
+/* nav 영역 */
+nav #navi{
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    top: -50px;
+    text-align: center;
+    font: bold 1em/60px "NGothic", Gulim;
+}
+
+nav #navi::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav #navi li{
+    float: left;
+    width: 200px;
+}
+
+nav #navi>li.navi_r{
+    position: relative;
+    left: 200px;
+}
+
+nav #navi>li>a{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 35px;
+    top: 0;
+}
+
+nav #navi>li:hover>a{
+    width: 100%;
+    border-bottom: 3px solid rgb(9, 46, 46);
+    transition: width 0.5s ease-in-out;
+}
+
+nav #navi>li>ul{
+    position: absolute;
+    width: 1000px;
+    background-color: #fff;  
+    z-index: 100;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #navi>li:nth-child(3)>ul{
+    left: -600px;
+}
+
+nav #navi>li:nth-child(4)>ul{
+    width: 800px;
+    left: -600px;
+}
+
+nav #navi>li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+
+nav #navi>li>ul>li{
+    height: 0px;
+    line-height: 0px;
+}
+
+nav #navi>li:hover>ul>li{
+    height: 25px;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+
+nav #navi>li>ul>li>a{
+    display: block;
+    height: 25px;
+    z-index: 100;
+    text-align: center;
+    background-color: #fff;  
+    color: #777;
+    font: bold 0.9em/25px "NGothic", Gulim;
+}
+
+nav #navi>li>ul>li>a:hover{
+    color: rgb(9, 46, 46);
+    font: bold 1em/25px "NGothicEB", Gulim;
+}
+/*-------------------------------------------------------------------------*/
+/* content 영역 시작 */
+/* 정의 영역 */ 
+#caffeine_d{
+    position: relative;
+    width: 1000px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+#caffeine_d::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#caffeine_d h2{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#caffeine_d h2 p{
+    background-color: #fff;
+}
+
+#caffeine_d .click_quick{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    right: 60px;
+    top: 0px;
+    text-align: right;
+}
+
+#caffeine_d .d_box{
+    margin: 0 auto;
+    width: 900px;
+    border-top: 3px solid #222;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+#caffeine_d .d_box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#caffeine_d .d_pbox{
+    height: 300px;
+}
+
+.d_pbox .d_img1{
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    padding-left: 30px;
+    float: left;
+}
+
+.d_pbox p{
+    line-height: 20pt;
+    margin-top: 10px;
+}
+
+.d_pbox .d_smr1{
+    clear: both;
+    position: relative;
+    width: 400px;
+    top: -280px;
+    left: 400px;
+}
+
+.d_pbox .d_img2{
+    width: 380px;
+    height: 390px;
+    object-fit: cover;
+    float: right;
+    padding-right: 50px;
+}
+
+.d_pbox .d_smr2{
+    width: 430px;
+    position: relative;
+    margin-left: 20px;
+}
+/*-----------------------------------*/
+/* 부작용 영역*/
+#caffeine_h{
+    position: relative;
+    width: 100%;
+    background: #ddd;
+    padding: 100px 0 50px 0;
+}
+
+#caffeine_h h2{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+}
+
+#caffeine_h h2 p{
+    background: #ddd;
+}
+
+#caffeine_h .h_box{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    border-top: 3px solid #222;
+    padding-top: 100px;
+    margin-top: -50px;
+}
+
+#caffeine_h .h_box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#caffeine_h .h_box img{
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+
+#caffeine_h .h_box .h_smr{
+    width: 410px;
+    position: absolute;
+    top: 90px;
+    left: 450px;
+}
+
+#caffeine_h .h_box .h_smr p{
+    line-height: 20pt;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+/*-----------------------------------*/
+/* 권장량 영역*/
+#caffeine_r{
+    position: relative;
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+
+#caffeine_r h2{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+}
+
+#caffeine_r h2 p{
+    background: #fff;
+}
+
+#caffeine_r .r_box{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    border-top: 3px solid #222;
+    padding-top: 100px;
+    margin-top: -50px;
+}
+
+#caffeine_r .r_box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#caffeine_r .r_box .r_smr{
+    width: 405px;
+    line-height: 20pt;
+}
+
+#caffeine_r .r_box .r_smr p{
+    margin-top: 10px;
+}
+
+#caffeine_r .r_box img{
+    float: right;
+    width: 450px;
+    height: 550px;
+    object-fit: contain;
+}
+
+table{
+    border: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 50px;
+}
+
+table td{
+    border: 1px solid #ddd;
+}
+
+table td.t_tit{
+    background-color: #eee;
+}
+/*-----------------------------------*/
+/* 추출방식 영역*/
+#caffeine_b{
+    position: relative;
+    width: 100%;
+    padding: 100px 0 0 0;
+    background: #ddd;
+}
+
+#caffeine_b h2{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+}
+
+#caffeine_b h2 p{
+    background: #ddd;
+}
+
+#caffeine_b .b_box{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    border-top: 3px solid #222;
+    padding-top: 100px;
+    margin-top: -50px;
+}
+
+#caffeine_b .b_box ul{
+    margin-top: 20px;
+}
+
+#caffeine_b .b_box ul{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#caffeine_b .b_box ul li{
+    float: left;
+}
+/* 네비 영역 */
+#b_navi{
+    position: relative;
+    width: 900px;
+    height: 60px;
+    top: -50px;
+    font: bold 13pt 'NGothic';
+}
+
+#b_navi>li{
+    position: absolute;
+    width: 150px;
+    top: 0;
+}
+
+#b_navi>li:last-child{
+    left: 150px;
+}
+
+#b_navi>li>a{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 60%;
+    color: #222;
+}
+
+#b_navi>li:hover>a{
+    width: 235%;
+    border-bottom: 3px solid #222;
+    transition: width 0.5s ease-in-out;
+    color: #555;
+}
+
+#b_navi>li:hover>a.b_m2{
+    width: 195%;
+    border-bottom: 3px solid #222;
+    transition: width 0.5s ease-in-out;
+}
+
+#b_navi li ul{
+    position: absolute;
+    width: 900px;
+}
+
+#b_navi>li:hover ul{
+    position: absolute;
+    top: 30px;
+}
+
+#b_navi li ul.b_sub2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#b_navi li:hover ul.b_sub2{
+    background: #ddd;
+    opacity: 1;
+    visibility: visible;
+    z-index: 50;
+    left: -150px;
+    padding-left: 150px;
+}
+
+#b_navi li ul li{
+    padding-right: 25px;
+}
+
+#b_navi li ul li:last-child{
+    padding-right: none;
+}
+
+#b_navi li ul li a{
+    color: #222;
+}
+/*----------------------*/
+/* 콘텐츠 영역*/
+#b_content{
+    position: relative;
+    width: 900px;
+    padding-bottom: 50px;
+}
+#b_content .b_con{
+    width: 900px;
+    height: 300px;
+    display: none;
+}
+
+#b_content .b_con img{
+    width: 380px;
+    height: 260px;
+    object-fit: cover;
+}
+
+#b_content .b_con p{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    left: 450px;
+    bottom: 250px;
+    line-height: 20pt;
+    margin-top: 10px;
+}
+
+#b_content .b_con1{
+    display: block;
+}
+
+#b_content .b_con1 img{
+    position: relative;
+    width: 380px;
+    height: 260px;
+    object-fit: cover;
+}
+#b_content .b_con1 .b_con1_p{
+    position: absolute;
+    left: 450px;
+    top: 0;
+}
+
+#b_content .b_con span{
+    display: inline-block;
+    width: 500px;
+    font: bold 16pt 'NGothicEB';
+    margin-bottom: 15px;
+}
+
+#b_content .b_graph{
+    width: 900px;
+}
+
+#b_content .b_graph .span_t{
+    display: inline-block;
+    font: bold 18pt 'NGothic';
+    padding: 0 0 20px 280px;
+}
+
+#b_content .b_graph img{
+    width: 700px;
+    object-fit: contain;
+    margin:0 0 10px 100px;
+}
+
+#b_content .b_graph p{
+    width: 900px;
+    line-height: 1.4em;
+    margin-top: 5px;
+}
+
+#b_content .b_graph .span_e{
+}
+/*-----------------------------------------------------------------*/
+/* footer 영역 */
+#foot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 57, 52);
+}
+
+#foot footer{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#foot footer ul{
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#foot footer ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#foot footer ul li{
+    float: left;
+    color: #ddd;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    font: normal 14px "NGothic", Gulim;
+}
+
+#foot footer ul a:last-child li{
+    border-right: 0;
+}
+
+#foot footer ul li:hover{
+    color: #999;
+}
+
+#foot footer address{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px ;
+}
+
+#foot footer address p{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#foot footer address span{
+    display: block;
+    color: #ddd;
+    font: normal 14px "NGothic", Gulim;
+    text-align: center;
+}

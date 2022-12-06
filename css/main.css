@@ -1,0 +1,960 @@
+@charset "utf-8";
+
+
+/* [S] quick.div 안 쓰기로 했습니다 */
+/*
+#quick{
+    position: fixed;
+    width: 100px;
+    height: 600px;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+}
+
+#quick_title{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(255, 217, 102);
+    border-radius: 50px 50px 0 0;
+}
+
+#quick_title p{
+    position: relative;
+    top: 30px;
+    font: bold 1em/1.2em "NGothicEB";
+    color: rgb(9, 46, 46);
+}
+
+#quick_title img{
+    position: relative;
+    top: 20px;
+}
+
+#quick_menu{
+    position: relative;
+    width: 100px;
+    height: 0px;
+    top: 0px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 217, 102);
+    opacity: 1;
+    transition: opacity, height 0.3s ease-in;
+}
+
+#quick_menu p{
+    color: #999;
+}
+
+.quick_text{
+    position: relative;
+    width: 90px;
+    height: 0px;
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity, height 1s ease;
+}
+
+
+.quick_last img{
+    position: relative;
+    top: 25px;
+}
+
+
+#quick_bottom{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(255, 217, 102);
+    border-radius: 0 0 50px 50px;
+    z-index: 900;
+    top: -15px;
+}
+*/
+/*hover*/
+/*
+#quick_title:hover ul{
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#quick_title:hover ul .quick_text{
+    height: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#quick_title:hover #quick_bottom{
+    top: -1px;
+}
+
+#quick_title>a:hover p{
+    color: white;
+    text-shadow: none;
+}
+
+#quick_menu a:hover p{
+    color: rgb(9, 46, 46);
+}
+*/
+/* [E] quick.div */
+
+/* [S] quick2.div */
+
+#quick2{
+    position: fixed;
+    width: 100px;
+    height: 450px;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+    background-color: rgb(255, 217, 102);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#quick2_menu{
+    position: relative;
+    width: 80px;
+    height: 428px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#quick2_menu li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-bottom: 7px dotted rgb(255, 217, 102);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#quick2_menu li:last-child{
+    border: none;
+}
+
+#quick2_menu li p{
+    font: bold 0.9em "NGothic", Gulim;
+    color: #777;
+}
+
+#quick2_menu .quick2_first{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick2_menu .quick2_first p{
+    color: #fff;
+    font: bold 1.1em "NGothicEB", Gulim;
+}
+
+/*hover*/
+
+#quick2_menu li:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#quick2_menu li:hover:first-child{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick2_menu li:hover:last-child{
+    border-radius: 15px;
+}
+
+#quick2_menu li:hover p{
+    color: rgb(9, 46, 46);
+    font: bold "NGothicEB", Gulim;
+}
+
+/* [E] quick2.div */
+
+/* [S] div.head*/
+#head{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(9, 46, 46);
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+#head:hover{
+    background-color: #fff;
+}
+
+#head:hover header>nav>#navi>li>a{
+    color: #555;
+    font: bold 1em "NGothicEB", Gulim;
+}
+
+header{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header a{
+    color: #ddd;
+}
+
+header h1{
+    position: relative;
+}
+
+header h1 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    margin: 30px 0 30px -50px;
+}
+
+header h1 img.loca_1{
+    position: absolute;
+}
+
+header h1 img.loca_2{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#head:hover header h1 img.loca_2{
+    opacity: 1;
+}
+
+header h1 img:hover{
+    
+    width: 110px;
+    height: 110px;
+    margin: 25px 0 25px -55px;
+}
+
+header #login{
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+header #login li{
+    float: left;
+    padding: 0 15px;
+    }
+
+header #login li:first-child{
+    border-right: 1px solid #ddd;
+}
+
+header #login li a{
+    color: #aaa;
+}
+
+header #login li a:hover{
+    color: #555;
+}
+
+nav #navi{
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    top: -50px;
+    text-align: center;
+    font: bold 1em/60px "NGothic", Gulim;
+}
+
+nav #navi::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav #navi li{
+    float: left;
+    width: 200px;
+}
+
+nav #navi>li.navi_r{
+    position: relative;
+    left: 200px;
+}
+
+nav #navi>li>a{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 35px;
+    top: 0;
+    color: pink;
+}
+
+nav #navi>li:hover>a{
+    width: 100%;
+    border-bottom: 3px solid rgb(9, 46, 46);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Sub Menu*/
+nav #navi>li>ul{
+    position: absolute;
+    width: 1000px;
+    background-color: #fff;  
+    z-index: 100;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #navi>li:nth-child(3)>ul{
+    left: -600px;
+}
+
+nav #navi>li:nth-child(4)>ul{
+    width: 800px;
+    left: -600px;
+}
+
+nav #navi>li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+
+nav #navi>li>ul>li{
+    height: 0px;
+    line-height: 0px;
+}
+
+nav #navi>li:hover>ul>li{
+    height: 25px;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+
+nav #navi>li>ul>li>a{
+    display: block;
+    height: 25px;
+    z-index: 100;
+    text-align: center;
+    background-color: #fff;  
+    color: #777;
+    font: bold 0.9em/25px "NGothic", Gulim;
+}
+
+nav #navi>li>ul>li>a:hover{
+    color: rgb(9, 46, 46);
+    font: bold 1em/25px "NGothicEB", Gulim;
+}
+
+
+
+/* [E] div.head*/
+
+/* [S] div.content*/
+#content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(9, 46, 46);
+}
+
+#content #find{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#content #find h2{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    left: 500px;
+    margin-left: -200px;
+    text-align: center;
+    font: bold 2em/100px "NGothicEB", Gulim;
+    background-color: rgb(9, 46, 46);
+    z-index: 1;
+}
+
+#content #find h2 a{
+    position: absolute;
+    color: #ddd;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+} 
+
+#content #find_menu{
+    position: relative;
+    width: 900px;
+    height: auto;
+    margin: -50px 50px;
+    border-top: 2px solid white;
+    padding-top: 100px;
+}
+
+/* [S] div.head\div.find\div.find_menu\ul.find_brand */
+
+#content #find_menu ul#find_brand{
+    position: relative;
+    width: 850px;
+    height: auto;
+    margin: auto 25px;
+    left: 5px;
+}
+/* [S] 컨텐츠 안에 있는 모든 li floating */
+#content #find_menu ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content #find_menu ul li{
+    float: left;
+}
+/* [E] 컨텐츠 안에 있는 모든 li floating */
+
+#content #find_menu ul#find_brand li{
+    padding: 30px 19px 10px;
+}
+
+#content #find_menu ul#find_brand li img{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 75px;
+}
+
+#content #find_menu ul#find_brand li span{
+    display: block;
+    width: 130px;
+    text-align: center;
+    padding: 20px 0;
+    color: #ddd;
+    font-size: 14px;
+}
+
+#content #find_menu ul#find_brand li:hover{
+    border-radius: 50px;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 25px 14px 5px;
+}
+
+#content #find_menu ul#find_brand li:hover a img{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+
+#content #find_menu ul#find_brand li:hover a span{
+    width: 140px;
+    color: #fff;
+}
+
+#content #find_menu img.add{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 51px;
+    left: 450px;
+    margin-left: -75px;
+
+}
+
+/* [E] div.head\div.find\div.find_menu\ul.find_brand */
+/* [S] div.head\div.find\div.find_menu\ul.find_btn */
+
+#content #find_menu ul#find_btn{
+    position: relative;
+    width: 570px;
+    margin: 30px auto;
+}
+
+#content #find_menu ul#find_btn li{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin: 0 20px;
+    background-color: rgb(78, 40, 6);
+    box-shadow: 3px 3px 1px #ddd;
+    text-align: center;
+    border-radius: 5px;
+    font: normal 1em/40px "NGothicEB", Gulim;
+    color: #ddd;
+}
+
+#content #find_menu ul#find_btn li.decaff{
+    background-color: rgb(22, 160, 133);
+}
+ 
+#content #find_menu ul#find_btn li.nocaff{
+    background-color: rgb(0, 148, 202);
+}
+ 
+#content #find_menu ul#find_btn li:hover{
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: none;
+}
+
+/* [E] div.head\div.find\div.find_menu\ul.find_btn */
+
+#content #find_menu h3{
+    display: block;
+    position: relative;
+    width: 400px;
+    left: 450px;
+    top: 70px;
+    margin-left: -200px;
+    color: #ddd;
+    font: bold 1.5em/50px "NGothicEB", Gulim;
+    background-color: rgb(9, 46, 46);
+    z-index: 100;
+    text-align: center;
+    
+
+}
+
+
+/* [S] div.head\div.find\div.find_menu\ul.find_result */
+
+#content #find_menu ul#find_result{
+    position: relative;
+    width: 802px;
+    height: 278px;
+    margin: 50px 0px;
+    padding: 50px 50px 0;
+    border: 1px solid #999;
+    z-index: 50;
+}
+
+#content #find_menu ul#find_result li a{
+    display: block;
+    padding: 30px 15px 10px;
+}
+
+#content #find_menu ul#find_result li img{
+    position: relative;
+    width: 130px;
+    height: 136px;
+    border-radius: 5px;
+}
+
+#content #find_menu ul#find_result li span.result_name{
+    display: block;
+    width: 130px;
+    text-align: center;
+    padding: 20px 0 10px;
+    color: #ddd;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#content #find_menu ul#find_result li span.result_caff{
+    display: block;
+    width: 130px;
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#content #find_menu ul#find_result li a span.result_more{
+    display: block;
+    width: 130px;
+    height: 136px;
+    background-color: #ddd;
+    text-align: center;
+    font: bold 1.1em/136px "NGothic", Gulim;
+}
+
+/* [E] div.head\div.find\div.find_menu\ul.find_result */
+/* [S] div.head\div.find\div.find_menu\ul.find_arrow */
+
+#content #find_menu ul#find_arrow{
+    position: relative;
+    width: 100%;
+    height: 48px;
+    top: -240px;
+}
+
+#content #find_menu ul#find_arrow li:first-child{
+    position: absolute;
+    left: 0;
+}
+
+#content #find_menu ul#find_arrow li:last-child{
+    position: absolute;
+    right: 0;
+}
+
+/* [E] div.head\div.find\div.find_menu\ul.find_arrow */
+/* [E] div.content*/
+
+/* [S] div.line*/
+.line{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+/* [E] div.line*/
+#lines{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#lines .line_top{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(65, 57, 52);
+    text-align: center;
+    font: bold 1.2em/50px "NGothicEB", Gulim;
+    color: #ddd;
+}
+
+#lines .line_bottom{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50px;
+    background-color: rgb(153, 142, 133);
+    text-align: center;
+    font: bold 1.2em/50px "NGothicEB", Gulim;
+    color: #333;
+}
+
+#lines img{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 70%;
+    top: 50%;
+}
+/* [S] div.news*/
+#news{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+#news section#news_inner{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#news section#news_inner h3{
+    position: relative;
+    width: 900px;
+    margin: 50px;
+}
+
+#news section#news_inner h3 img{
+    position: relative;
+    width: 420px;
+}
+
+#news section#news_inner h3 p{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 0px;
+    top: 0;
+}
+
+#news section#news_inner h3 p.main_title{
+    position: absolute;
+    width: 430px;
+    top: 0px;
+    padding: 0 20px;
+}
+
+#news section#news_inner h3 p.main_title span:first-child{
+    color: rgb(22, 160, 133);
+    font-size: 4em;
+}
+
+#news section#news_inner h3 p.main_title span:last-child{
+    font-size: 1.5em;
+}
+
+#news section#news_inner h3 p.main_text{
+    position: absolute;
+    width: 430px;
+    top: 90px;
+    padding: 20px;
+    }
+
+#news section#news_inner h3 p.main_text span{
+    display: block;
+    font-size: 14px;
+    line-height: 1.7em;
+    margin-bottom: 15px;
+}
+
+#news section#news_inner h3 p.main_text span:first-child{
+    text-indent: 10px;
+}
+
+
+#news section#news_inner h3 p.main_text span:last-child{
+    font: bold 15px/1.7em "NGothicEB", Gulim;
+}
+
+#news section#news_inner h3 p.main_text span:last-child .loca{
+    display: inline;
+    color: rgb(22, 160, 133);
+    font: bold 16px/1.7em "NGothicEB", Gulim;
+}
+
+#news section#news_inner #sub_news{
+    position: relative;
+    width: 900px;
+    height: auto;
+    margin: 100px auto; /* ---------------- 이거 마진값 나중 검토!! ----*/
+}
+
+#news section#news_inner #sub_news ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#news section#news_inner #sub_news ul li{
+    float: left;
+    padding-right: 30px;
+}
+
+#news section#news_inner #sub_news ul li:last-child{
+    padding-right: 0;
+}
+
+#news section#news_inner #sub_news ul li img{
+    position: relative;
+    width: 280px;
+}
+
+#news section#news_inner #sub_news ul li p{
+    position: relative;
+    width: 280px;
+    font-size: 13px;
+}
+
+#news section#news_inner #sub_news ul li p span.news_title{
+    display: block;
+    font-size: 15px;
+    width: 280px;
+    margin: 10px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* [E] div.news*/
+
+/* [S] div.check*/
+
+#check{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+}
+
+#check #check_inner{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#check #check_inner h4{
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    padding: 50px 50px 0 50px;
+}
+
+#check #check_inner h4 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    left: 25px;
+}
+
+#check #check_inner h4 p{
+    position: relative;
+    width: 700px;
+    left: 200px;
+    top: -135px;
+    margin-top: 10px;
+}
+
+#check #check_inner h4 p#check_title{
+    font: bold 2em "NGothic", Gulim;
+}
+
+#check #check_inner h4 p#check_title span{
+    font-size: 1.2em;
+    color: rgb(22, 160, 133);
+    text-shadow: 2px 2px 1px #333;
+}
+
+#check #check_inner h4 p#check_subtitle{
+    color: #777;
+}
+
+#check #check_inner #check_menu{
+    position: relative;
+    width: 1000px;
+    padding-bottom: 50px;
+}
+
+#check #check_inner #check_menu ul{
+    position: relative;
+    margin: 0 50px;
+}
+
+#check #check_inner #check_menu ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#check #check_inner #check_menu ul li{
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#check #check_inner #check_menu ul li:last-child{
+    margin-right: 0;
+}
+
+
+#check #check_inner #check_menu ul li img{
+    position: relative;
+    width: 280px;
+    border-radius: 10px;
+}
+
+#check #check_inner #check_menu ul li span{
+    display: block;
+    width: 280px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1em;
+}
+
+#check #check_inner #check_menu ul li:hover{
+    position: relative;
+    left: -1px;
+    top: -1px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: -2px 0px 15px #999;
+
+}
+
+/* [E] div.check*/
+
+/* [S] div.foot*/
+
+#foot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 57, 52);
+}
+
+#foot footer{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#foot footer ul{
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#foot footer ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#foot footer ul li{
+    float: left;
+    color: #ddd;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    font: normal 14px "NGothic", Gulim;
+}
+
+#foot footer ul a:last-child li{
+    border-right: 0;
+}
+
+#foot footer ul li:hover{
+    color: #999;
+}
+
+#foot footer address{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px ;
+}
+
+#foot footer address p{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#foot footer address span{
+    display: block;
+    color: #ddd;
+    font: normal 14px "NGothic", Gulim;
+    text-align: center;
+}
+
+
+
+/* [E] div.foot*/

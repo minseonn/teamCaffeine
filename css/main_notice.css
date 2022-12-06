@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+/* [S] div.head*/
+#head{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(9, 46, 46);
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+#head:hover{
+    background-color: #fff;
+}
+
+#head:hover header>nav>#navi>li>a{
+    color: #555;
+    font: bold 1em "NGothicEB", Gulim;
+}
+
+header{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header a{
+    color: #ddd;
+}
+
+header h1{
+    position: relative;
+}
+
+header h1 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    margin: 30px 0 30px -50px;
+}
+
+header h1 img.loca_1{
+    position: absolute;
+}
+
+header h1 img.loca_2{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#head:hover header h1 img.loca_2{
+    opacity: 1;
+}
+
+header h1 img:hover{
+    
+    width: 110px;
+    height: 110px;
+    margin: 25px 0 25px -55px;
+}
+
+header #login{
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+header #login li{
+    float: left;
+    padding: 0 15px;
+    }
+
+header #login li:first-child{
+    border-right: 1px solid #ddd;
+}
+
+header #login li a{
+    color: #aaa;
+}
+
+header #login li a:hover{
+    color: #555;
+}
+
+nav #navi{
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    top: -50px;
+    text-align: center;
+    font: bold 1em/60px "NGothic", Gulim;
+}
+
+nav #navi::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav #navi li{
+    float: left;
+    width: 200px;
+}
+
+nav #navi>li.navi_r{
+    position: relative;
+    left: 200px;
+}
+
+nav #navi>li>a{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 35px;
+    top: 0;
+}
+
+nav #navi>li:hover>a{
+    width: 100%;
+    border-bottom: 3px solid rgb(9, 46, 46);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Sub Menu*/
+nav #navi>li>ul{
+    position: absolute;
+    width: 1000px;
+    background-color: #fff;  
+    z-index: 100;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #navi>li:nth-child(3)>ul{
+    left: -600px;
+}
+
+nav #navi>li:nth-child(4)>ul{
+    width: 800px;
+    left: -600px;
+}
+
+nav #navi>li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+
+nav #navi>li>ul>li{
+    height: 0px;
+    line-height: 0px;
+}
+
+nav #navi>li:hover>ul>li{
+    height: 25px;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+
+nav #navi>li>ul>li>a{
+    display: block;
+    height: 25px;
+    z-index: 100;
+    text-align: center;
+    background-color: #fff;  
+    color: #777;
+    font: bold 0.9em/25px "NGothic", Gulim;
+}
+
+nav #navi>li>ul>li>a:hover{
+    color: rgb(9, 46, 46);
+    font: bold 1em/25px "NGothicEB", Gulim;
+}
+
+
+
+/* [E] div.head*/
+
+/* [S] div.container*/
+#container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#notice{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#notice h2{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+    font: bold 2em/200px "NGothicEB", Gulim;
+    z-index: 10;
+}
+
+#notice p.click_quick{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    right: 50px;
+    text-align: right;
+    z-index: 10;
+}
+
+#notice form{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    right: 50px;
+    top: 170px;
+    text-align: right;
+    z-index: 10;
+}
+
+#notice form legend{
+    display: none;
+}
+
+#notice form input.noti_type{
+    width: 70px;
+}
+
+
+#notice form input.noti_search{
+    width: 200px;
+}
+
+#notice form span{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid rgb(9, 46, 46);
+    border-radius: 10px;
+    color: rgb(9, 46, 46);
+}
+
+#nt_tb{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    padding-top: 200px;
+}
+
+#nt_tb table{
+    position: relative;
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid rgb(9, 46, 46);
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+#nt_tb .nt_t th{
+    border-bottom: 3px solid rgb(9, 46, 46);
+    background-color: rgb(9, 46, 46);
+    color: #ddd;
+}
+
+#nt_tb tr{
+    height: 40px;
+}
+
+#nt_tb tr.must_read{
+    background-color: rgba(255, 217, 102, 0.5);
+    border: 1px solid rgba(255, 217, 102, 0.5);
+}
+
+#nt_tb th{
+    font: bold 0.9em "NGothic", Gulim;
+}
+
+#nt_tb th.nt_t_no{
+    width: 100px;
+}
+
+#nt_tb th.nt_t_wr{
+    width: 150px;
+}
+
+#nt_tb th.nt_t_da{
+    width: 150px;
+}
+
+#nt_tb td{
+    text-align: center;
+    font: normal 0.8em "NGothic", Gulim;
+    
+}
+
+#nt_tb td:nth-child(2){
+    left: 10px;
+    text-align: left;
+}
+
+#notice_page{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#notice_num_btn{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#notice_num_btn a{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+    color: #ccc;
+}
+
+#notice_page img{
+    position: absolute;
+    width: 30px;
+    left: 0px;
+}
+
+#notice_page .page_btn_next{
+    left: 470px;
+}
+
+
+/*hover*/
+#nt_tb td:hover a{
+    color: #000;
+}
+
+
+#notice_num_btn a:hover{
+    color: #333;
+}
+
+
+
+/* [E] div.container*/
+
+/* [S] div.foot*/
+
+#foot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 57, 52);
+}
+
+#foot footer{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#foot footer ul{
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#foot footer ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#foot footer ul li{
+    float: left;
+    color: #ddd;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    font: normal 14px "NGothic", Gulim;
+}
+
+#foot footer ul a:last-child li{
+    border-right: 0;
+}
+
+#foot footer ul li:hover{
+    color: #999;
+}
+
+#foot footer address{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px ;
+}
+
+#foot footer address p{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#foot footer address span{
+    display: block;
+    color: #ddd;
+    font: normal 14px "NGothic", Gulim;
+    text-align: center;
+}
+
+
+
+/* [E] div.foot*/

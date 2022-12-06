@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+h1, h2, h3, h4{
+    font-size: 100%;
+}
+
+address{
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "NGothic";
+    src: url('../font/NanumGothic.woff') format('woff');
+}
+
+@font-face {
+    font-family: "NGothicEB";
+    src: url('../font/NanumGothicExtraBold.woff') format('woff');
+}
+
+body{
+    font: 13pt "NGothic", Gulim;
+}
